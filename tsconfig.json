@@ -1,0 +1,9 @@
+{
+  "extends": "zotero-types/entries/sandbox/",
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false
+  },
+  "include": ["src", "typings"],
+  "exclude": ["addon", "node_modules", ".scaffold", "test"]
+}

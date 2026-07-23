@@ -1,0 +1,15 @@
+node_modules/
+.scaffold/
+.env
+.zotero-dev-profile/
+.zotero-dev-data/
+.zotero-runtime-profile/
+.zotero-runtime-data/
+.zotero-runtime-logs/
+*.xpi
+coverage/
+dist/
+*.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db

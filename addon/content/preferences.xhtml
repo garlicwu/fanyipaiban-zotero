@@ -1,0 +1,167 @@
+<linkset>
+  <html:link rel="localization" href="__addonRef__-preferences.ftl" />
+  <html:link rel="stylesheet" href="chrome://__addonRef__/content/preferences.css" />
+</linkset>
+
+<groupbox onload="Zotero.__addonInstance__.hooks.onPrefsEvent('load', { window })">
+  <html:main class="fp-preferences">
+    <html:header class="fp-preferences__header">
+      <html:div>
+        <html:p class="fp-eyebrow" data-l10n-id="pref-eyebrow"></html:p>
+        <html:h1 data-l10n-id="pref-title"></html:h1>
+        <html:p data-l10n-id="pref-description"></html:p>
+      </html:div>
+      <html:a
+        id="fp-open-developer-docs"
+        class="fp-link"
+        href="#"
+        data-l10n-id="pref-developer-docs"
+      ></html:a>
+    </html:header>
+
+    <html:section class="fp-section" aria-labelledby="fp-account-heading">
+      <html:div class="fp-section__heading">
+        <html:div>
+          <html:h2 id="fp-account-heading" data-l10n-id="pref-account-title"></html:h2>
+          <html:p data-l10n-id="pref-account-description"></html:p>
+        </html:div>
+        <html:span id="fp-connection-status" class="fp-status" data-state="idle"></html:span>
+      </html:div>
+
+      <html:label class="fp-field" for="fp-api-key">
+        <html:span data-l10n-id="pref-api-key-label"></html:span>
+        <html:div class="fp-input-row">
+          <html:input
+            id="fp-api-key"
+            type="password"
+            autocomplete="off"
+            spellcheck="false"
+            data-l10n-id="pref-api-key-input"
+          />
+          <html:button
+            id="fp-toggle-api-key"
+            class="fp-icon-button"
+            type="button"
+            aria-pressed="false"
+          >
+            <html:span aria-hidden="true">Aa</html:span>
+          </html:button>
+        </html:div>
+        <html:small data-l10n-id="pref-api-key-help"></html:small>
+      </html:label>
+
+      <html:div class="fp-actions">
+        <html:button
+          id="fp-save-api-key"
+          class="fp-button fp-button--primary"
+          type="button"
+          data-l10n-id="pref-save-test"
+        ></html:button>
+        <html:button
+          id="fp-clear-api-key"
+          class="fp-button"
+          type="button"
+          data-l10n-id="pref-clear-key"
+        ></html:button>
+        <html:button
+          id="fp-manage-api-key"
+          class="fp-button"
+          type="button"
+          data-l10n-id="pref-manage-key"
+        ></html:button>
+      </html:div>
+
+      <html:div class="fp-balance" aria-live="polite">
+        <html:div>
+          <html:span data-l10n-id="pref-available-credits"></html:span>
+          <html:strong id="fp-available-credits">--</html:strong>
+        </html:div>
+        <html:div>
+          <html:span data-l10n-id="pref-frozen-credits"></html:span>
+          <html:strong id="fp-frozen-credits">--</html:strong>
+        </html:div>
+        <html:button
+          id="fp-refresh-balance"
+          class="fp-button"
+          type="button"
+          data-l10n-id="pref-refresh-balance"
+        ></html:button>
+        <html:button
+          id="fp-recharge"
+          class="fp-button fp-button--accent"
+          type="button"
+          data-l10n-id="pref-recharge"
+        ></html:button>
+      </html:div>
+    </html:section>
+
+    <html:section class="fp-section" aria-labelledby="fp-translation-heading">
+      <html:div class="fp-section__heading">
+        <html:div>
+          <html:h2 id="fp-translation-heading" data-l10n-id="pref-translation-title"></html:h2>
+          <html:p data-l10n-id="pref-translation-description"></html:p>
+        </html:div>
+      </html:div>
+
+      <html:label class="fp-field fp-field--compact" for="fp-target-language">
+        <html:span data-l10n-id="pref-target-language"></html:span>
+        <html:select id="fp-target-language"></html:select>
+        <html:small data-l10n-id="pref-source-language-help"></html:small>
+      </html:label>
+
+      <html:fieldset class="fp-options">
+        <html:legend data-l10n-id="pref-output-title"></html:legend>
+        <html:label>
+          <html:input
+            id="fp-output-translated"
+            type="checkbox"
+            checked="checked"
+            disabled="disabled"
+          />
+          <html:span data-l10n-id="pref-output-translated"></html:span>
+        </html:label>
+        <html:label>
+          <html:input id="fp-output-comparison" type="checkbox" />
+          <html:span data-l10n-id="pref-output-comparison"></html:span>
+        </html:label>
+        <html:label>
+          <html:input id="fp-output-markdown" type="checkbox" />
+          <html:span data-l10n-id="pref-output-markdown"></html:span>
+        </html:label>
+        <html:label>
+          <html:input id="fp-confirm-submit" type="checkbox" />
+          <html:span data-l10n-id="pref-confirm-submit"></html:span>
+        </html:label>
+      </html:fieldset>
+    </html:section>
+
+    <html:details class="fp-advanced">
+      <html:summary data-l10n-id="pref-advanced-title"></html:summary>
+      <html:div class="fp-advanced__content">
+        <html:label class="fp-field" for="fp-server-url">
+          <html:span data-l10n-id="pref-server-url"></html:span>
+          <html:input id="fp-server-url" type="url" spellcheck="false" />
+          <html:small data-l10n-id="pref-server-url-help"></html:small>
+        </html:label>
+        <html:button
+          id="fp-reset-server-url"
+          class="fp-button"
+          type="button"
+          data-l10n-id="pref-reset-server"
+        ></html:button>
+      </html:div>
+    </html:details>
+
+    <html:footer class="fp-preferences__footer">
+      <html:div class="fp-footer-links">
+        <html:a id="fp-privacy" href="#" data-l10n-id="pref-privacy"></html:a>
+        <html:a id="fp-terms" href="#" data-l10n-id="pref-terms"></html:a>
+        <html:a id="fp-refund" href="#" data-l10n-id="pref-refund"></html:a>
+      </html:div>
+      <html:span
+        data-l10n-id="pref-build"
+        data-l10n-args='{"version":"__buildVersion__","time":"__buildTime__"}'
+      ></html:span>
+    </html:footer>
+  </html:main>
+</groupbox>
