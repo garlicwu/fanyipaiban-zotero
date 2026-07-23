@@ -42,6 +42,10 @@ Translation uses the same credits balance as the FanyiPaiban workbench and publi
 
 The selected PDF, file name, target language, and API key authentication are sent to the FanyiPaiban API only when the user explicitly starts a translation. See [PRIVACY.md](PRIVACY.md).
 
+## Support
+
+Customer service and technical support: [124005421@qq.com](mailto:124005421@qq.com)
+
 ## Development
 
 Node.js 22.8 or newer is required by the Zotero plugin build toolchain.

@@ -8,6 +8,7 @@ export const RECHARGE_URL =
 export const PRIVACY_URL = "https://fanyipaiban.com/privacy-policy/";
 export const TERMS_URL = "https://fanyipaiban.com/terms-of-service/";
 export const REFUND_URL = "https://fanyipaiban.com/refund-policy/";
+export const SUPPORT_EMAIL_URL = "mailto:124005421@qq.com";
 
 export const MAX_PDF_BYTES = 300 * 1024 * 1024;
 export const CREATE_TIMEOUT_MS = 30 * 60 * 1000;

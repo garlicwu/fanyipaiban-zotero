@@ -35,4 +35,5 @@ pref-reset-server = Restore production URL
 pref-privacy = Privacy Policy
 pref-terms = Terms of Service
 pref-refund = Refund Policy
+pref-support-email = Support: 124005421@qq.com
 pref-build = Version { $version } · built { $time }

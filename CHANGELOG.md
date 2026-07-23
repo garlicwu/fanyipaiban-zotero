@@ -4,6 +4,10 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-07-23
+
+- Added the customer service email to Zotero settings and the public documentation.
+
 ## [0.1.0] - 2026-07-22
 
 - Initial Zotero 7/8 plugin project.

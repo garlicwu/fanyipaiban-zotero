@@ -35,4 +35,5 @@ pref-reset-server = 恢复正式服务地址
 pref-privacy = 隐私政策
 pref-terms = 服务条款
 pref-refund = 退款政策
+pref-support-email = 客服邮箱：124005421@qq.com
 pref-build = 版本 { $version } · 构建时间 { $time }

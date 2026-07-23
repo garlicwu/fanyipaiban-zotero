@@ -6,6 +6,7 @@ import {
   PRODUCTION_API_BASE_URL,
   RECHARGE_URL,
   REFUND_URL,
+  SUPPORT_EMAIL_URL,
   TERMS_URL,
 } from "../constants";
 import { ApiClientError } from "../services/apiClient";
@@ -106,6 +107,7 @@ export async function registerPreferences(win: Window): Promise<void> {
   bindExternalLink(doc, "fp-privacy", PRIVACY_URL);
   bindExternalLink(doc, "fp-terms", TERMS_URL);
   bindExternalLink(doc, "fp-refund", REFUND_URL);
+  bindExternalLink(doc, "fp-support-email", SUPPORT_EMAIL_URL);
 
   if (apiKeyInput.value) {
     void testConnection(doc, apiKeyInput.value).catch((error) => {

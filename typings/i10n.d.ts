@@ -84,6 +84,7 @@ export type FluentMessageId =
   | 'pref-status-failed'
   | 'pref-status-not-configured'
   | 'pref-status-testing'
+  | 'pref-support-email'
   | 'pref-target-language'
   | 'pref-terms'
   | 'pref-title'

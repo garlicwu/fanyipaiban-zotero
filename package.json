@@ -1,7 +1,7 @@
 {
   "name": "fanyipaiban-zotero",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Translate complete PDFs in Zotero while preserving the original document layout.",
   "config": {
     "addonName": "FanyiPaiban PDF Translator",
