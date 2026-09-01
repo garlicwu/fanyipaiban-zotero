@@ -4,6 +4,8 @@ Translate complete PDF attachments from Zotero with the FanyiPaiban document tra
 
 Supported Zotero versions: 7 through 9.
 
+Product page and setup guide: [LingoBridge Zotero PDF Translator](https://fanyipaiban.com/en/zotero/).
+
 ## Features
 
 - Translate a selected PDF attachment or an item with exactly one local PDF.

@@ -4,6 +4,8 @@
 
 支持 Zotero 7 至 Zotero 9。
 
+产品介绍与安装说明：[翻译排版 Zotero PDF 翻译插件](https://fanyipaiban.com/zotero/)。
+
 ## 主要功能
 
 - 翻译选中的本地 PDF，或者仅包含一个本地 PDF 的文献条目。
